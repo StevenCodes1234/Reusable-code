@@ -1,0 +1,47 @@
+// Use event delegation to handle clicks on "Add to Cart" buttons
+    productsContainer.addEventListener("click", (e) => {
+        if (e.target.classList.contains("buy-button")) {
+            const productName = e.target.getAttribute("data-product-name");
+            const productPrice = parseFloat(e.target.getAttribute("data-product-price")); // Ensure price is a number
+            const productImage = e.target.getAttribute("data-product-image");
+            const productDescription = e.target.getAttribute("data-product-description");
+
+            addToCart({ 
+                name: productName, 
+                price: productPrice, 
+                image: productImage, 
+                description: productDescription 
+            });
+        }
+    });
+}
+
+// Function to add items to the cart
+function addToCart(product) {
+    // Retrieve the existing cart from localStorage or initialize an empty array
+    const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
+    
+    // Add the new product to the cart
+    existingCart.push(product);
+    
+    // Save the updated cart back to localStorage
+    localStorage.setItem("cart", JSON.stringify(existingCart));
+    
+    // Update the cart count
+    updateCartCount();
+    
+    console.log("Cart saved to localStorage:", JSON.parse(localStorage.getItem("cart"))); // Debugging
+}
+
+// Function to update the cart count
+function updateCartCount() {
+    // Retrieve the cart from localStorage
+    const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
+    
+    // Update the cart count based on the number of items in the cart
+    const cartCount = document.getElementById("cart-count");
+    cartCount.textContent = existingCart.length;
+}
+
+// Call the function to fetch and display products when the page loads
+fetchStripeProducts();
