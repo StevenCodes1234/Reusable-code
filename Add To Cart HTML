@@ -1,0 +1,16 @@
+<a href="Checkout.html" id="cart-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart" class="cart-icon" />
+        <span id="cart-count">0</span>
+    </a>
+
+<div class="products">
+        <h1>Products</h1>
+    </div>
+
+    <div id="product-list" class="product-list">
+        <!-- Product items will be dynamically added here -->
+    <script async
+    src="https://js.stripe.com/v3/buy-button.js">
+  </script>
+
+<button class="add-to-cart">Add to Cart</button>
