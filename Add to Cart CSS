@@ -1,0 +1,77 @@
+.add-to-cart {
+    display: none; /* Make the button a block element */
+    width: 200px; /* Set a fixed width for the button */
+    height: 50px; /* Set a fixed height for the button */
+    margin: 20px auto; /* Center the button horizontally and add spacing */
+    background: linear-gradient(to right, #4CAF50, #5387d6); /* Gradient background */
+    color: white; /* Button text color */
+    font-size: 20px; /* Adjust font size for the button text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Style for the cart icon */
+#cart-icon {
+    position: absolute; /* Position it relative to the menu bar */
+    top: 10px; /* Adjust the vertical position */
+    right: 20px; /* Adjust the horizontal position */
+    display: none; /* Use flexbox for alignment */
+    align-items: center; /* Center the icon vertically */
+    text-decoration: none; /* Remove underline */
+    width: 70px; /* Set a fixed width for the cart icon */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+/* Style for the cart image */
+.cart-icon {
+    width: 50px; /* Set the size of the cart icon */
+    height: 45px;
+}
+
+/* Style for the cart counter */
+#cart-count {
+    position: absolute;
+    top: -5px; /* Position the counter above the cart icon */
+    right: -10px; /* Position the counter to the right of the cart icon */
+    background-color: red; /* Red background for the counter */
+    color: white; /* White text color */
+    font-size: 12px; /* Font size for the counter */
+    font-weight: bold; /* Bold text */
+    border-radius: 50%; /* Make it a circle */
+    padding: 2px 6px; /* Add padding for size */
+    display: none; /* Ensure it displays as an inline block */
+    text-align: center; /* Center the text inside the circle */
+}/* Style for the cart icon */
+#cart-icon {
+    position: absolute; /* Position it relative to the menu bar */
+    top: 10px; /* Adjust the vertical position */
+    right: 20px; /* Adjust the horizontal position */
+    display: none; /* Use flexbox for alignment */
+    align-items: center; /* Center the icon vertically */
+    text-decoration: none; /* Remove underline */
+    width: 70px; /* Set a fixed width for the cart icon */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+/* Style for the cart image */
+.cart-icon {
+    width: 50px; /* Set the size of the cart icon */
+    height: 45px;
+}
+
+/* Style for the cart counter */
+#cart-count {
+    position: absolute;
+    top: -5px; /* Position the counter above the cart icon */
+    right: -10px; /* Position the counter to the right of the cart icon */
+    background-color: red; /* Red background for the counter */
+    color: white; /* White text color */
+    font-size: 12px; /* Font size for the counter */
+    font-weight: bold; /* Bold text */
+    border-radius: 50%; /* Make it a circle */
+    padding: 2px 6px; /* Add padding for size */
+    display: none; /* Ensure it displays as an inline block */
+    text-align: center; /* Center the text inside the circle */
+}
