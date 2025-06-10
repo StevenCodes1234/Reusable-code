@@ -1,0 +1,10 @@
+<nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About Page.html">About</a></li>
+            <li><a href="Photo-gallery.html">Photo Gallery</a></li>
+            <li><a href="Videos.html">Videos</a></li>
+            <li><a href="Store-page.html">Store</a></li>
+            <li><a href="Contact-Us.html">Contact Us</a></li>
+        </ul>
+    </nav> 
