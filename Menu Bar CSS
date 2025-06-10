@@ -1,0 +1,33 @@
+/* General styles for the menu (default for desktop) */
+.menu {
+    display: flex; /* Align menu items side by side */
+    justify-content: center; /* Center the menu items horizontally */
+    align-items: center; /* Align items vertically */
+    background: linear-gradient(to right, #4CAF50, #5387d6); /* Gradient background */
+    max-width: 100%; /* Set a maximum width for the menu */
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove bullet points */
+    height: 80px; /* Set a fixed height for the menu */
+    flex-direction: row; /* Ensure menu items are horizontal */
+}
+
+.menu li {
+    margin: 0 15px; /* Add spacing between menu items */
+    display: flex; /* Display items inline */
+    align-items: center; /* Center items vertically */
+    height: 100%; /* Ensure items take full height of the menu */
+}
+
+.menu a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link text color */
+    font-weight: bold; /* Make the text bold */
+    padding: 10px 15px; /* Add padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add a hover effect */
+}
